@@ -1,0 +1,1473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh; 
+    background: linear-gradient(#113a36, #005148, #117b6f);
+}
+/*This is the header section code, where the design of the header-
+section is being modified.*/
+header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    transition: .3s ease;
+}
+
+header .donation{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    transition: .3s ease;
+}
+#namaplikasi{
+    background-image: url(Images/fixnotext.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: -0.1rem;
+    padding-left: 80px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+header ul li a:hover
+{
+    background: white;
+    color: #007d6e;
+}
+
+/*This is the section code modifier, where the code will overwrite-
+ on how the section code */
+section{
+    display: flex   ;
+    position: relative; 
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to top, #113a36, transparent);
+}
+section img#stars1{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+
+}
+section img#stars2{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+footer img#stars3{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+/*This is the title section code, where the title section's design-
+is being modified.*/
+.texth2{
+    position: absolute;
+    color: white;  
+    white-space: nowrap;
+    font-size: 5rem;
+    z-index: 9;
+    margin-right: 34.6rem;
+    margin-bottom: 70rem;
+    transition: .3s ease;
+    right: -350px;
+    letter-spacing: 10px;
+}
+#click{
+    text-decoration: none;
+    padding: 8px 30px;
+    display:inline-block;
+    border-radius: 40px;
+    background: white;
+    color: #007d6e;
+    font-size: 1.5em ;
+    z-index: 9;
+    transform: translateY(10px);
+    margin-right: 2.7rem;
+    margin-top: 5rem;
+    transition: .3s ease;
+}
+
+#click:hover{
+    background: #787878;
+    color: white;
+}
+/*This is the form filling section code, where the form filling-
+section's design is being modified.*/
+.background{
+    display: flex;
+    background: linear-gradient(#113a36, #005148, #117b6f);
+    background-size: 170rem;
+    height: 100vh;
+    width: 100%;
+    transition: 1.5s ease;
+}
+.background::before{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to top, #113a36, transparent);
+}
+
+h1{
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+
+}
+h2{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 28rem;
+    margin-right: 30rem;
+}
+
+.foto{
+    width: 200px;
+}
+p{
+    text-align: left;
+    color: white;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    text-align: justify;
+    padding: 0;
+    position:absolute;
+    transform: translate(-55%, -50%);
+    top: 45%;
+    left: 25%;
+    overflow: hidden;
+    box-shadow: 10px 10px 30px rgba(251, 254, 228, 0.924)
+}
+
+.thebox{
+    position: absolute;
+    margin-left: -17rem;
+    margin-bottom: 7.5rem;
+    margin-top: -5rem;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 95vh;
+    width: 90vh;
+    
+}
+
+.thebox h2{
+   margin-top: 28rem;
+   margin-right: 30.3rem;
+}
+.thebox p{
+    text-align: center;
+    position: absolute;
+    margin-left: -15rem;
+    margin-right: -15rem;
+    margin-bottom: -1rem;
+    margin-top: 35rem;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 95vh;
+    width: 90vh;
+ }
+.wrapper{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    animation: slide 20s infinite;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    23% {
+        transform: translateX(0%);
+    }
+    30% {
+        transform: translateX(-50%);
+    }
+    40% {
+        transform: translateX(-50%);
+    }
+    48% {
+        transform: translateX(-100%);
+    }
+    59% {
+        transform: translateX(-100%);
+    }
+    65% {
+        transform: translateX(-50%);
+    }
+    78% {
+        transform: translateX(-50%);
+    }
+    86% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+img{
+    width: 50%;
+}
+form{
+    margin-left: 57rem;
+    float: right;
+}
+.formie{
+    position: absolute;
+    color: white;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: -25rem;
+    margin-left: -23rem;
+    outline: none;
+    transition: .3s ease;
+}
+
+.f1{
+    float: left;
+    transition: .3s ease;
+
+}
+
+.f2{
+    color: white;
+    float: right;
+    margin-right: 180px;
+    transition: .3s ease;
+}
+
+.ccc{
+    clear: right;
+    position: relative;
+    display: flex;
+    transition: .3s ease;
+}
+
+textarea{
+    border-radius: 15px;
+    padding: 10px;
+    width: 35rem;
+    margin-bottom: 5px;
+}
+
+input{
+    height: 3rem;
+    border-radius: 20px;
+    padding: 10px;
+    width: 35rem;
+    margin-bottom: 5px;
+}
+
+.subs{
+    text-decoration: none;
+    width: 20rem;
+    padding: 8px 1px;
+    display:inline-block;
+    border-radius: 40px;
+    background: white;
+    color: #007d6e;
+    font-size: 1.5em ;
+    z-index: 9;
+    transform: translateY(10px);
+    margin-right: 2.7rem;
+    margin-top: -0.5rem;
+    transition: .3s ease;
+    margin-left: 7.5rem;
+}
+.subs:hover{
+    background: #787878;
+    color: white;
+}
+/*This is the JQuery design for the message that will-
+pop up when the user hasn't filled the form*/
+label.error{
+    font-weight: 700;
+    display: block;
+    color: #f00;
+    font-size: 13px;
+}
+/*This is the continuation of the form filling section*/
+#Amount{
+    background-image: url(Images/rupiah.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 35px;
+}
+#Name{
+    background-image: url(Images/user.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 35px;
+}
+#Number{
+    background-image: url(Images/contact.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 35px;
+}
+#Email{
+    background-image: url(Images/mail.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 35px;
+}
+
+::placeholder{
+    text-align: center;
+}
+/*This is the about us section code, where every-
+design in that section is being modified.*/
+.cons {
+    background-image: url(Images/space.png);
+    height: 100vh;
+    width: 100vw;
+    max-width: 100rem;
+    min-width: 600px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .border {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    background: transparent;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    opacity: 0;
+    transition: 1s ease;
+  }
+  .border:hover {
+    opacity: 1;
+  }
+  .person {
+    position: relative;
+    height: 270px;
+    width: 270px;
+    background: #808080;
+    margin: 20px;
+    border-radius: 20px;
+    transition: .8s ease;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .person1 {
+    background: url(Images/adit11.png) center center no-repeat;
+    background-size: 300px;
+  }
+  .person1:hover {
+    background: url(Images/adit11.png) left center no-repeat;
+    background-size: 450px;
+  }
+  .person2 {
+    background: url(Images/nandika.jpg) center center no-repeat;
+    background-size: 300px;
+  }
+  .person2:hover {
+    background: url(Images/nandika.jpg) left center no-repeat;
+    background-size: 500px;
+  }
+  .person3 {
+    background: url(Images/gana.png) center center no-repeat;
+    background-size: 300px;
+  }
+  .person3:hover {
+    background: url(Images/gana.png) left center no-repeat;
+    background-size: 500px;
+  }
+  .person4 {
+    background: url(Images/krisna1.png) center center no-repeat;
+    background-size: 300px;
+  }
+  .person4:hover {
+    background: url(Images/krisna1.png) left center no-repeat;
+    background-size: 350px;
+  }
+  h3 {
+    position: absolute;
+    bottom: 120px;
+    left: 25px;
+    width: 15px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.2;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  }
+
+  .text3{
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 5rem;
+    z-index: 9;
+    margin-right: 60rem;
+    margin-bottom: 65rem;
+    transition: .3s ease;
+    right: -350px;
+}
+.aboutus{
+    background: linear-gradient(#113a36, #005148, #117b6f);
+}
+/*This is the responsive panel, where the page will be able to adapt-
+in the other devices*/
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+    /* CSS rules for 24 inch display go here */
+    
+    header ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-right: 2rem;
+    }
+
+    .texth2{
+        position: absolute;
+        color: white;  
+        white-space: nowrap;
+        font-size: 5rem;
+        z-index: 9;
+        margin-right: 38rem;
+        margin-bottom: 70rem;
+        transition: .3s ease;
+        right: -350px;
+        letter-spacing: 10px;
+        
+    }
+    #click{
+        text-decoration: none;
+        padding: 8px 30px;
+        display:inline-block;
+        border-radius: 40px;
+        background: white;
+        color: #007d6e;
+        font-size: 1.5em ;
+        z-index: 9;
+        transform: translateY(10px);
+        margin-right: -2rem;
+        margin-top: 5rem;
+        transition: .3s ease;
+    }
+    
+    #click:hover{
+        background: #787878;
+        color: white;
+    }
+    .background{
+        display: flex;
+        background: linear-gradient(#113a36, #005148, #117b6f);
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        transition: 1.5s ease;
+    }
+    .background::before{
+        content: '';
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(to top, #113a36, transparent);
+    }
+
+    .container{
+        width: 400px;
+        height: 400px;
+        text-align: justify;
+        padding: 0;
+        position:absolute;
+        transform: translate(-55%, -50%);
+        top: 45%;
+        left: 10%;
+        overflow: hidden;
+        box-shadow: 10px 10px 30px rgba(251, 254, 228, 0.924)
+    }
+    
+    .thebox{
+        position: absolute;
+        margin-left: 1rem;
+        margin-bottom: 7.5rem;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 95vh;
+        width: 90vh;
+        
+    }
+    
+    .thebox h2{
+       position: absolute;
+       margin-top: 25rem;
+       margin-right: 30rem;
+       margin-left: -10.7rem;
+       text-align: center;
+    }
+    .thebox p{
+        text-align: center;
+        position: absolute;
+        margin-left: -25rem;
+        margin-right: -15rem;
+        margin-bottom: 1rem;
+        margin-top: 35rem;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 95vh;
+        width: 90vh;
+     }
+    .wrapper{
+        width: 800px;
+        height: 400px;
+        display: flex;
+        animation: slide 20s infinite;
+    }
+
+    .text3{
+        position: absolute;
+        color: white;
+        white-space: nowrap;
+        font-size: 5rem;
+        z-index: 9;
+        margin-right: 68rem;
+        margin-bottom: 65rem;
+        transition: .3s ease;
+        right: -350px;
+    }
+    .formie{
+        position: absolute;
+        color: white;
+        display: inline-block;
+        box-sizing: border-box;
+        margin-top: -25rem;
+        margin-left: -23rem;
+        outline: none;
+        transition: .3s ease;
+    }
+    
+    .f1{
+        float: left;
+        transition: .3s ease;
+    
+    }
+    
+    .f2{
+        color: white;
+        float: left;
+        margin-right: 180px;
+        transition: .3s ease;
+    }
+    
+    .ccc{
+        clear: right;
+        position: relative;
+        display: flex;
+        transition: .3s ease;
+    }
+  }
+@media screen and (min-width: 2560px) and (min-height: 1440px) {
+    /* CSS rules for 27 inch display go here */
+    
+    header ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-right: 2rem;
+    }
+    header .donation{
+        color: white;
+        font-weight: 1000;
+        text-decoration: none;
+        font-size: 3em;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        transition: .3s ease;
+    }
+    header ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+    }
+    
+    header ul li{
+        list-style: none;
+        margin-left: 20px;
+    }
+    
+    header ul li a{
+        text-decoration: none;
+        padding: 6px 15px;
+        color: white;
+        border-radius: 20px;
+    }
+    
+    header ul li a:hover
+    {
+        background: white;
+        color: #007d6e;
+    }
+    #namaplikasi{
+        background-image: url(Images/fixnotext.png);
+        background-size: 100px;
+        background-repeat: no-repeat;
+        background-position: -1rem;
+        padding-left: 80px;
+    }
+
+    .texth2{
+        position: absolute;
+        color: white;  
+        white-space: nowrap;
+        font-size: 7rem;
+        z-index: 9;
+        margin-right: 44rem;
+        margin-bottom: 70rem;
+        transition: .3s ease;
+        right: -350px;
+        letter-spacing: 10px;
+        
+    }
+    #click{
+        text-decoration: none;
+        padding: 8px 30px;
+        display:inline-block;
+        border-radius: 40px;
+        background: white;
+        color: #007d6e;
+        font-size: 3em ;
+        z-index: 9;
+        transform: translateY(10px);
+        margin-right: 1rem;
+        margin-top: 15rem;
+        transition: .3s ease;
+    }
+    
+    #click:hover{
+        background: #787878;
+        color: white;
+    }
+    .background{
+        display: flex;
+        background: linear-gradient(#113a36, #005148, #117b6f);
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        transition: 1.5s ease;
+    }
+    .background::before{
+        content: '';
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(to top, #113a36, transparent);
+    }
+
+    .container{
+        width: 650px;
+        height: 650px;
+        text-align: justify;
+        padding: 0;
+        position:absolute;
+        transform: translate(-55%, -50%);
+        top: 45%;
+        left: 10%;
+        overflow: hidden;
+        box-shadow: 10px 10px 30px rgba(251, 254, 228, 0.924)
+    }
+    
+    .thebox{
+        position: absolute;
+        margin-left: 1rem;
+        margin-bottom: 7.5rem;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 95vh;
+        width: 90vh;
+        
+    }
+    
+    .thebox h2{
+       position: absolute;
+       margin-top: 40rem;
+       margin-right: 40rem;
+       margin-left: -19.5rem;
+       text-align: center;
+       font-size: 3.5rem;
+    }
+    .thebox p{
+        text-align: center;
+        position: absolute;
+        margin-left: -34.5rem;
+        margin-right: -15rem;
+        margin-bottom: 1rem;
+        margin-top: 50rem;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 95vh;
+        width: 90vh;
+        font-size: 25px;
+     }
+    .wrapper{
+        width: 1300px;
+        height: 650px;
+        display: flex;
+        animation: slide 20s infinite;
+    }
+
+    .text3{
+        position: absolute;
+        color: white;
+        white-space: nowrap;
+        font-size: 5rem;
+        z-index: 9;
+        margin-right: 87rem;
+        margin-bottom: 65rem;
+        transition: .3s ease;
+        right: -350px;
+    }
+    .formie{
+        position: absolute;
+        color: white;
+        display: inline-block;
+        box-sizing: border-box;
+        margin-top: -31rem;
+        margin-left: -23rem;
+        outline: none;
+        transition: .3s ease;
+    }
+    
+    .f1{
+        float: left;
+        transition: .3s ease;
+        font-size: 25px;
+    }
+    
+    .f2{
+        color: white;
+        float: left;
+        margin-right: 180px;
+        transition: .3s ease;
+        font-size: 25px;
+    }
+    
+    .ccc{
+        clear: right;
+        position: relative;
+        display: flex;
+        transition: .3s ease;
+        margin-top: 1rem;
+        font-size: 20px;
+    }
+    textarea{
+        border-radius: 15px;
+        padding: 10px;
+        width: 58rem;
+        margin-bottom: 5px;
+    }
+    
+    input{
+        height: 4rem;
+        border-radius: 20px;
+        padding: 10px;
+        width: 58rem;
+        margin-bottom: 5px;
+    }
+    
+    .subs{
+        text-decoration: none;
+        width: 20rem;
+        padding: 8px 1px;
+        display:inline-block;
+        border-radius: 40px;
+        background: white;
+        color: #007d6e;
+        font-size: 1.5em ;
+        z-index: 9;
+        transform: translateY(10px);
+        margin-right: 2.7rem;
+        margin-top: -0.5rem;
+        transition: .3s ease;
+        margin-left: 19rem;
+    }
+    .cons {
+        height: 80vh;
+        width: 200vw;
+        max-width: 100rem;
+        min-width: 100rem;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 768px) and (max-height:1024px){
+    /* CSS rules for iPad Mini display go here */
+    header .donation{
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 25px;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        transition: .3s ease;
+        margin-right: 12rem;
+        margin-left: 3.2rem;
+        margin-top: 1.4rem;
+    }
+    #namaplikasi{
+        background-image: url(Images/fixnotext.png);
+        background-size: 53px;
+        background-repeat: no-repeat;
+        background-position: -0.1rem;
+        padding-left: 90px;
+        margin-right: -10rem;
+    }
+    header ul{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-left: 9rem;
+        margin-right: -10rem;
+        margin-top: 8rem;
+    }
+
+    .texth2{
+        position: absolute;
+        color: white;  
+        white-space: nowrap;
+        font-size: 3.5rem;
+        z-index: 9;
+        margin-right: 23.7rem;
+        margin-bottom: 65rem;
+        transition: .3s ease;
+        right: -350px;
+        letter-spacing: 10px;
+        
+    }
+    #click{
+        text-decoration: none;
+        padding: 8px 30px;
+        display:inline-block;
+        border-radius: 40px;
+        background: white;
+        color: #007d6e;
+        font-size: 1.5em ;
+        z-index: 9;
+        transform: translateY(10px);
+        margin-right: -1rem;
+        margin-top: 5rem;
+        transition: .3s ease;
+    }
+    
+    #click:hover{
+        background: #787878;
+        color: white;
+    }
+    .background{
+        display: flex;
+        background: linear-gradient(#113a36, #005148, #117b6f);
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        transition: 1.5s ease;
+    }
+    .background::before{
+        content: '';
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(to top, #113a36, transparent);
+    }
+
+    .container{
+        width: 250px;
+        height: 250px;
+        text-align: justify;
+        padding: 0;
+        position:absolute;
+        transform: translate(-55%, -50%);
+        top: 23%;
+        left: 1%;
+        overflow: hidden;
+        box-shadow: 10px 10px 30px rgba(251, 254, 228, 0.924)
+    }
+    
+    .thebox{
+        position: absolute;
+        margin-left: 35rem;
+        margin-bottom: 7.5rem;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 95vh;
+        width: 90vh;
+        
+    }
+    
+    .thebox h2{
+       position: absolute;
+       margin-top: -43rem;
+       margin-right: 20rem;
+       margin-left: 11rem;
+       text-align: center;
+       font-size: 22px;
+    }
+    .thebox p{
+        text-align: center;
+        position: absolute;
+        margin-left: 11.5rem;
+        margin-right: 5rem;
+        margin-bottom: 70rem;
+        margin-top: 35rem;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 95vh;
+        width: 50vh;
+        font-size: 15px;
+        max-width: 30vh;
+        word-wrap: break-word;
+    }
+    
+    .wrapper{
+        width: 500px;
+        height: 500px;
+        display: flex;
+        animation: slide 20s infinite;
+    }
+
+    .text3{
+        position: absolute;
+        color: white;
+        white-space: nowrap;
+        font-size: 2.6rem;
+        z-index: 9;
+        margin-right: 38rem;
+        margin-bottom: 65rem;
+        transition: .3s ease;
+        right: -350px;
+    }
+    .formie{
+        position: absolute;
+        color: white;
+        display: inline-block;
+        box-sizing: border-box;
+        margin-top: -10rem;
+        margin-left: -23rem;
+        outline: none;
+        transition: .3s ease;
+        margin-left: -38rem;
+    }
+    
+    .f1{
+        float: left;
+        transition: .3s ease;
+        font-size: 18px;
+        margin-left: -6rem;
+    
+    }
+    
+    .f2{
+        color: white;
+        float: left;
+        margin-right: 180px;
+        transition: .3s ease;
+        font-size: 18px;
+        margin-left: -6rem;
+    }
+    
+    .ccc{
+        clear: right;
+        position: relative;
+        display: flex;
+        transition: .3s ease;
+    }
+
+    textarea{
+        border-radius: 15px;
+        padding: 10px;
+        width: 35rem;
+        height: 8rem;
+        margin-left: -7rem;
+    }
+
+    input{
+        height: 3rem;
+        border-radius: 20px;
+        padding: 10px;
+        width: 35rem;
+        margin-bottom: 5px;
+        margin-right: 10rem;
+        margin-left: -1rem;
+    }
+
+    .subs{
+        text-decoration: none;
+        width: 12rem;
+        padding: 8px 1px;
+        display:inline-block;
+        border-radius: 40px;
+        background: white;
+        color: #007d6e;
+        font-size: 1.5em ;
+        z-index: 9;
+        transform: translateY(10px);
+        margin-right: 10rem;
+        margin-top: -0.5rem;
+        transition: .3s ease;
+        margin-left: 4.2rem;
+        font-size: 15px;
+        font-weight: 800;
+    }
+    .subs:hover{
+        background: #787878;
+        color: white;
+    }
+
+    
+}
+
+@media screen and (min-width: 390px) and (max-height:844px){
+    /* CSS rules for Mobile display go here */
+    header .donation{
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        transition: .3s ease;
+    }
+    #namaplikasi{
+        background-image: url(Images/fixnotext.png);
+        background-size: 60px;
+        background-repeat: no-repeat;
+        background-position: -0.1rem;
+        padding-left: -1rem;
+    }
+    header ul{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        margin-left: -1.7rem;
+        margin-top: 7.5rem;
+    }
+
+    .texth2{
+        position: absolute;
+        color: white;  
+        white-space: nowrap;
+        font-size: 25px;
+        z-index: 9;
+        margin-right: 22.2rem;
+        margin-bottom: 63rem;
+        transition: .3s ease;
+        right: -350px;
+        letter-spacing: 10px;
+        
+    }
+    #texth3{
+        position: absolute;
+        color: white;  
+        white-space: nowrap;
+        font-size: 35px;
+        z-index: 9;
+        margin-right: 27.5rem;
+        margin-top: 31rem;
+        transition: .3s ease;
+        right: -350px;
+        letter-spacing: 10px;
+        
+    }
+    #click{
+        text-decoration: none;
+        padding: 8px 30px;
+        display:inline-block;
+        border-radius: 40px;
+        background: white;
+        color: #007d6e;
+        font-size: 0.7em ;
+        z-index: 9;
+        transform: translateY(10px);
+        margin-right: -0.5rem;
+        margin-top: 1rem;
+        transition: .3s ease;
+    }
+    
+    #click:hover{
+        background: #787878;
+        color: white;
+    }
+    .background{
+        display: flex;
+        background: linear-gradient(#113a36, #005148, #117b6f);
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        transition: 1.5s ease;
+    }
+    .background::before{
+        content: '';
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(to top, #113a36, transparent);
+    }
+
+    .container{
+        width: 150px;
+        height: 150px;
+        text-align: justify;
+        padding: 0;
+        position:absolute;
+        transform: translate(-55%, -50%);
+        top: 20.5%;
+        left: 2%;
+        overflow: hidden;
+        box-shadow: 10px 10px 30px rgba(251, 254, 228, 0.924)
+    }
+    
+    .thebox{
+        position: absolute;
+        margin-left: 35rem;
+        margin-bottom: 7.5rem;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 95vh;
+        width: 90vh;
+        
+    }
+    
+    .thebox h2{
+       position: absolute;
+       margin-top: -36rem;
+       margin-right: 30rem;
+       margin-left: 7rem;
+       text-align: center;
+       font-size: 15px;
+    }
+    .thebox p{
+        text-align: center;
+        position: absolute;
+        margin-left: 6rem;
+        margin-right: 10rem;
+        margin-bottom: 64.5rem;
+        margin-top: 35rem;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 95vh;
+        width: 50vh;
+        font-size: 10px;
+        max-width: 23vh;
+        word-wrap: break-word;
+    }
+    
+    .wrapper{
+        width: 300px;
+        height: 150px;
+        display: flex;
+        animation: slide 20s infinite;
+    }
+
+    .text3{
+        position: absolute;
+        color: white;
+        white-space: nowrap;
+        font-size: 2.6rem;
+        z-index: 9;
+        margin-right: 27rem;
+        margin-bottom: 74rem;
+        transition: .3s ease;
+        right: -350px;
+    }
+    .formie{
+        position: absolute;
+        color: white;
+        display: inline-block;
+        box-sizing: border-box;
+        margin-top: -15rem;
+        margin-left: -23rem;
+        outline: none;
+        transition: .3s ease;
+        margin-left: -38rem;
+    }
+    
+    .f1{
+        float: left;
+        transition: .3s ease;
+        font-size: 12px;
+    
+    }
+    
+    .f2{
+        color: white;
+        float: left;
+        margin-right: 180px;
+        transition: .3s ease;
+        font-size: 12px;
+    }
+    
+    .ccc{
+        clear: right;
+        position: relative;
+        display: flex;
+        transition: .3s ease;
+    }
+    textarea{
+        border-radius: 15px;
+        padding: 10px;
+        width: 20rem;
+        height: 8rem;
+        margin-bottom: 5px;
+    }
+
+    input{
+        height: 2rem;
+        border-radius: 20px;
+        padding: 10px;
+        width: 20rem;
+        margin-bottom: 5px;
+    }
+
+    .subs{
+        text-decoration: none;
+        width: 12rem;
+        padding: 8px 1px;
+        display:inline-block;
+        border-radius: 40px;
+        background: white;
+        color: #007d6e;
+        font-size: 1.5em ;
+        z-index: 9;
+        transform: translateY(10px);
+        margin-right: 10rem;
+        margin-top: -0.5rem;
+        transition: .3s ease;
+        margin-left: 4.2rem;
+        font-size: 15px;
+        font-weight: 800;
+    }
+    .subs:hover{
+        background: #787878;
+        color: white;
+    }
+    label.error{
+        font-weight: 700;
+        display: block;
+        color: #f00;
+        font-size: 10px;
+    }
+    #Amount{
+        background-image: url(Images/rupiah.png);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 10px;
+        padding-left: 35px;
+    }
+    #Name{
+        background-image: url(Images/user.png);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 10px;
+        padding-left: 35px;
+    }
+    #Number{
+        background-image: url(Images/contact.png);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 10px;
+        padding-left: 35px;
+    }
+    #Email{
+        background-image: url(Images/mail.png);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 10px;
+        padding-left: 35px;
+    }
+
+    ::placeholder{
+        text-align: center;
+    }
+
+    .cons {
+        background-image: url(Images/space.png);
+        height: 100vh;
+        width: 20vw;
+        max-width: 100rem;
+        min-width: 100px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex-direction: column;
+      }
+      .border {
+        position: relative;
+        height: 135px;
+        width: 135px;
+        background: transparent;
+        border-radius: 15px;
+        border: 2px solid #fff;
+        opacity: 0;
+        transition: 1s ease;
+      }
+      .border:hover {
+        opacity: 1;
+      }
+      .person {
+        position: relative;
+        height: 150px;
+        width: 150px;
+        background: #808080;
+        margin: 6px;
+        border-radius: 20px;
+        transition: .8s ease;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .person1 {
+        background: url(Images/adit11.png) center center no-repeat;
+        background-size: 280px;
+      }
+      .person1:hover {
+        background: url(Images/adit11.png) left center no-repeat;
+        background-size: 300px;
+      }
+      .person2 {
+        background: url(Images/nandika.jpg) center center no-repeat;
+        background-size: 200px;
+      }
+      .person2:hover {
+        background: url(Images/nandika.jpg) left center no-repeat;
+        background-size: 300px;
+      }
+      .person3 {
+        background: url(Images/gana.png) center center no-repeat;
+        background-size: 200px;
+      }
+      .person3:hover {
+        background: url(Images/gana.png) left center no-repeat;
+        background-size: 300px;
+      }
+      .person4 {
+        background: url(Images/krisna1.png) center center no-repeat;
+        background-size: 200px;
+      }
+      .person4:hover {
+        background: url(Images/krisna1.png) left center no-repeat;
+        background-size: 200px;
+      }
+      h3 {
+        position: absolute;
+        bottom: 12px;
+        left: 10px;
+        width: 15px;
+        color: #fff;
+        font-size: 10px;
+        line-height: 1.2;
+        text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+      }
+    .aboutus{
+        background: linear-gradient(#113a36, #005148, #117b6f);
+    }
+}
